@@ -1,6 +1,6 @@
-#Attribution-NonCommercial-ShareAlike 4.0 International
+                                             Attribution-NonCommercial-ShareAlike 4.0 International
+                                                                      
 
-=======================================================================
 
 Creative Commons Corporation ("Creative Commons") is not a law firm and
 does not provide legal services or legal advice. Distribution of
@@ -52,7 +52,6 @@ exhaustive, and do not form part of our licenses.
      for the public:
     wiki.creativecommons.org/Considerations_for_licensees
 
-=======================================================================
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 Public License
