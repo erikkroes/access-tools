@@ -6,11 +6,6 @@
   "icons": {
     "64": "icons/icon.png"
   },
-  "browser_action": {
-    "default_icon": "icons/icon.png",
-    "default_title": "Access Tools",
-    "default_popup": "popup/index.html"
-  },
   "content_scripts": [
     {
       "matches": [
@@ -20,5 +15,17 @@
         "content_script.js"
       ]
     }
-  ]
+  ],
+  
+  "options_ui": {
+    "page": "popup/index.html"
+  },
+
+  "permissions": ["storage"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
+  }
 }
