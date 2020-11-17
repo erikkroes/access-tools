@@ -1,0 +1,78 @@
+:root {
+  --brightest: #fff;
+  --bright: #757580;
+  --positive: #0a0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  width: 400px;
+}
+
+body {
+  background-color: #eee;
+  color: #2d2d35;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  padding: 1rem;
+}
+
+.filters__list {
+  padding-left: 0;
+}
+
+.filter {
+  list-style-type: none;
+}
+
+.filter__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter__title {
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+.filter__switch {}
+
+.filter__desc {}
+
+
+/* Switch bit */
+
+[role="switch"] {  
+  padding: 0;
+  width: 2.6rem;
+  height: 1.5rem;
+  border: 0;
+  border-radius: 1rem;
+  background-color: var(--bright);
+}
+
+[role="switch"][aria-checked="true"] {
+  background-color: var(--positive);
+}
+
+[role="switch"] span {
+  color: var(--brightest);
+  padding: 0.1rem;  
+  pointer-events: none;
+  border-radius: 2rem;
+}
+
+[role="switch"][aria-checked="false"] :last-child {
+  padding-left: .2em;
+}
+
+[role="switch"][aria-checked="true"] :last-child,[role="switch"][aria-checked="false"] :first-child {
+  background: var(--brightest);
+}

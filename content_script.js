@@ -1,19 +1,37 @@
-// Put all the javascript code here, that you want to execute after page load.
-
 const init = () => {
-  const allEl = document.querySelectorAll("body *[tabindex]"); 
+  console.log("Getting settings");
 
-  allEl.forEach(el => {
-    console.log(el);
-    if(el.getAttribute('tabindex') > 0) {
-      el.setAttribute('tabindex', 0);
-    }
-  });
+  browser.storage.sync.get("tabindex").then(filterTabindex);
+  browser.storage.sync.get("no-alt").then(filterNoAlt);
 }
 
 try {
-  init();
-  console.log(`Loaded!`);
+  init();  
 } catch (error) {
   console.error(`Access Tools error: ${error}`)
+}
+
+function filterTabindex(state) {
+  console.log(state);
+  if (state.tabindex == true) { 
+    console.log("tabindex set to " + state.tabindex);
+    const allEl = document.querySelectorAll("body *[tabindex]"); 
+
+    allEl.forEach(el => {
+      if(el.getAttribute('tabindex') > 0) {
+        el.setAttribute('tabindex', 0);
+      }
+    });
+    console.log("tabindex ran!");
+  }
+}
+
+function filterNoAlt(state) {
+  if (state.noalt == true) { 
+    const allEl = document.querySelectorAll("body img:not[alt], body img[alt='']"); 
+
+    allEl.forEach(el => {
+      el.setAttribute('hidden', true);
+    });
+  }  
 }

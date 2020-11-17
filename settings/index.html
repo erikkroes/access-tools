@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+<body>
+  <h1>Access Tools</h1>
+
+  <main>
+    <h2>Filters</h2>
+    <ul class="filters__list">
+      <li class="filter">
+        <label for="tabindex" class="filter__label"> 
+          <h3 class="filter__title">No positive tabindex</h3>
+          <button type="button" id="tabindex" role="switch" aria-checked="true">
+            <span>on</span><span>off</span>  
+          </button>
+        </label>
+        <p>Positive tabindex gets set to 0 instead.</p>
+      </li>
+      <li class="filter">
+        <label for="no-alt" class="filter__label"> 
+          <h3 class="filter__title">Hide images without an alt text</h3>
+          <button type="button" id="no-alt" role="switch" aria-checked="true">
+            <span>on</span><span>off</span>  
+          </button>
+        </label>
+        <p>Hide images that have an empty alt or no alt at all</p>
+      </li>
+    </ul>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
