@@ -18,7 +18,7 @@
   ],
   
   "options_ui": {
-    "page": "popup/index.html"
+    "page": "settings/index.html"
   },
 
   "permissions": ["storage"],
