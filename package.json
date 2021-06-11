@@ -16,9 +16,7 @@
     "url": "https://github.com/erikkroes/access-tools/issues"
   },
   "homepage": "https://github.com/erikkroes/access-tools#readme",
-  "dependencies": {
-    "@wext/shipit": "^0.2.1",
-    "dotenv": "^10.0.0",
+  "devDependencies": {
     "web-ext-deploy": "^0.7.7",
     "web-ext-submit": "^6.1.0"
   }
