@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Access Tools",
   "description": "Improve your experience, one tool at a time.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icons": {
     "64": "icons/icon.png"
   },
@@ -26,7 +26,7 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "addon@example.com"
+      "id": "{181135d2-2851-45dd-9f62-391c87a7c47d}"
     }
   }
 }

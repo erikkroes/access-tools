@@ -1,0 +1,25 @@
+{
+  "name": "access-tools",
+  "version": "0.0.3",
+  "description": "Improve your experience, one tool at a time.",
+  "main": "content_script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikkroes/access-tools.git"
+  },
+  "author": "Erik Kroes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erikkroes/access-tools/issues"
+  },
+  "homepage": "https://github.com/erikkroes/access-tools#readme",
+  "dependencies": {
+    "@wext/shipit": "^0.2.1",
+    "dotenv": "^10.0.0",
+    "web-ext-deploy": "^0.7.7",
+    "web-ext-submit": "^6.1.0"
+  }
+}
